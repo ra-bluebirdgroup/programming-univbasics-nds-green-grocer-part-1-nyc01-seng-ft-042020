@@ -33,24 +33,24 @@ cart = [
 
 new_cart = []
 cart.each do |product_hash|
-  product_hash.select { |key, value| 
-    
+  product_hash.select { |key, value|
+
 if !find_item_by_name_in_collection(value, new_cart)
-    new_cart << product_hash  
- else 
-    new_cart.each do |new_product_hash| 
+    new_cart << product_hash
+ else
+    new_cart.each do |new_product_hash|
       product_hash[count]
-   
+
 end
 
 }
 
-end 
+end
 
 
 new_cart.each do |new_product_hash|
       new_product_hash.merge!(count: 1)
-    end  
+    end
 
 
 p new_cart
