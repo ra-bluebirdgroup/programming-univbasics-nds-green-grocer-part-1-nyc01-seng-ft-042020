@@ -35,11 +35,7 @@ new_cart = []
 
 cart.clone.each do |product_hash|
   product_hash.select { |key, value|
-    if find_item_by_name_in_collection(value, new_cart)
-    new_cart.each do |new_product_hash|
-    new_product_hash[:count] += 1
-       end
-    elsif !find_item_by_name_in_collection(value, new_cart)
+    if  !find_item_by_name_in_collection(value, new_cart)
       new_cart.each do |new_product_hash|
       product_hash[:count] = 1
       new_cart << product_hash
