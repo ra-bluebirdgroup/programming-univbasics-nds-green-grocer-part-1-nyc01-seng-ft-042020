@@ -46,8 +46,6 @@ elsif find_item_by_name_in_collection(key, new_cart)
 
 end
 
-new_cart.each do |new_product_hash|
-  new_product_hash.count{ |_, v| v == }
 
 
 #  p new_cart
