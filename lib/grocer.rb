@@ -51,9 +51,9 @@ end
 end
 
 
-new_cart.each do |new_product_hash|
-      new_product_hash.merge!(count: 1)
-    end
+# new_cart.each do |new_product_hash|
+#       new_product_hash.merge!(count: 1)
+#     end
 
 
 p new_cart[]
