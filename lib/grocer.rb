@@ -52,7 +52,7 @@ new_cart.each do |new_product_hash|
     end
 
 
-p new_cart
+return new_cart
 
 
 #  p new_cart
