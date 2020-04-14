@@ -14,7 +14,7 @@ end
   #
   # Consult README for inputs and outputs
 
- def consolidate_cart(cart)
+ # def consolidate_cart(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
@@ -32,10 +32,10 @@ cart.each do |item_hash|
            else
               product_hash[:count] += 1
 
-           end 
+           end
       end
     end
   end
 
- new_cart
-end
+ p new_cart
+# end
