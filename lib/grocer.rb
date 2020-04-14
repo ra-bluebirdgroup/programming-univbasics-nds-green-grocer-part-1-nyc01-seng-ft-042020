@@ -3,7 +3,7 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |product_hash|
     product_hash.select{|key, value|
          if value.to_s == name
-           return product_hash
+            product_hash
          end
         }
      end
