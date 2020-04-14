@@ -41,7 +41,10 @@ cart.each do |product_hash|
      end
 
     elsif !find_item_by_name_in_collection(value, new_cart)
+      new_cart.clone.each do |new_product_hash|
+      product_hash[:count] = 1
      new_cart << product_hash
+
     end
 }
 
