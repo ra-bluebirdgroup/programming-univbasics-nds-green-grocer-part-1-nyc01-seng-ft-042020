@@ -23,12 +23,10 @@ end
 new_cart = []
 cart.each do |item_hash|
   item_hash.each do |key, value|
-     find_item_by_name_in_collection(key, new_cart) ?
        new_cart.each do |product_hash|
           if product_hash.include?(:key)
               product_hash[:count] += 1
-
-        :
+          else  
         item_hash[:count] = 1
         new_cart << item_hash
 
