@@ -35,7 +35,7 @@ new_cart = []
 cart.each do |item_hash|
   item_hash.each do |key, value|
        new_cart.each do |product_hash|
-          if !product_hash.include?(:key)
+          if !product_hash.has_value?(value)
               new_cart << item_hash
               product_hash[:count] ? product_hash[:count] += 1 :
               product_hash[:count] = 1
