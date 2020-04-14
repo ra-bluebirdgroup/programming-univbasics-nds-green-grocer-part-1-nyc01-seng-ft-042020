@@ -37,15 +37,11 @@ new_cart = []
 
 if find_item_by_name_in_collection(key, new_cart)
      new_cart.each do |new_product_hash|
-       new_product_hash[key] ? new_product_hash[:count] += 1 : product_hash[:count] = 1
-        new_cart << product_hash
-       end 
-      end
-#
-# else #!find_item_by_name_in_collection(key, new_cart)
-#    product_hash[:count] = 1
-#    new_cart << product_hash
-#    end
+       new_product_hash[key] ? (key) new_product_hash[:count] += 1
+else #!find_item_by_name_in_collection(key, new_cart)
+   product_hash[:count] = 1
+   new_cart << product_hash
+   end
 
 }
 
