@@ -4,12 +4,12 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |product_hash|
     product_hash.select{|key, value|
          if value.to_s == name
-           new_hash = product_hash 
+           new_hash = product_hash
          else
            puts "We're sorry, item not found"
          end
         }
-     end 
+     end
      new_hash
 end
 cart = [
