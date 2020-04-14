@@ -54,7 +54,7 @@ end
 #     end
 
 
-puts new_cart
+p new_cart
 
 
 #  p new_cart
