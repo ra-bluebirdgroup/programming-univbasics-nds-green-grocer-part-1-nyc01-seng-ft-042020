@@ -40,7 +40,6 @@ if !find_item_by_name_in_collection(key, new_cart)
   else
     product_hash[:count] += 1
  end
-end
 
 }
 
