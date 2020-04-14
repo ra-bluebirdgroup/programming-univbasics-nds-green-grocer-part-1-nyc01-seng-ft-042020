@@ -46,7 +46,7 @@ end
 }
 
 end
-end 
+end
 
 
 # new_cart.each do |new_product_hash|
@@ -54,7 +54,7 @@ end
 #     end
 
 
-p new_cart
+puts new_cart
 
 
 #  p new_cart
