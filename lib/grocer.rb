@@ -31,8 +31,8 @@ cart = [
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
-new_cart = []
-cart.each do product_hash
-find_item_by_name_in_collection(name, new_cart)
- p new_cart
+# new_cart = []
+# cart.each do product_hash
+# find_item_by_name_in_collection(name, new_cart)
+#  p new_cart
 # end
