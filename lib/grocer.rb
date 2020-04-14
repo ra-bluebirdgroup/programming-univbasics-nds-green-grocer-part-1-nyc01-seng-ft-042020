@@ -43,13 +43,13 @@ cart.clone.each do |product_hash|
       new_cart.each do |new_product_hash|
       product_hash[:count] = 1
       new_cart << product_hash
-        end 
+        end
     end
     }
 
 end
 
-return new_cart
+p new_cart
 
 
 #  p new_cart
