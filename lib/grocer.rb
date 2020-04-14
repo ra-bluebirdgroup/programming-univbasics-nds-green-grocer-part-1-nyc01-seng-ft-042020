@@ -23,13 +23,16 @@ end
 new_cart = []
 cart.each do |item_hash|
   item_hash.each do |key, value|
-       new_cart.each do |product_hash|
-          if product_hash.include?(:key)
-              product_hash[:count] += 1
-          else  
-        item_hash[:count] = 1
-        new_cart << item_hash
-
+       new_cart.each do |product_hash| 
+          if !product_hash.include?(:key) 
+              new_cart << item_hash
+              product_hash[:count] ? product_hash[:count] += 1 : 
+              product_hash[:count] = 1 
+          
+           else 
+              product_hash[:count] += 1  
+              
+           end 
       end
     end
   end
