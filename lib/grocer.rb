@@ -37,7 +37,8 @@ cart.each do |product_hash|
 if !find_item_by_name_in_collection(value, new_cart)
     product_hash.merge!(count: 1)
     new_cart << product_hash
- else
+end  
+   product_hash.merge!(count: 1)
 
 end
 }
