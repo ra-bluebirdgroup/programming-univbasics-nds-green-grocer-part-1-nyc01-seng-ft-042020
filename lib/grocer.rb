@@ -39,16 +39,15 @@ new_cart.each do |new_product_hash|
 if !find_item_by_name_in_collection(value, new_cart)
     product_hash[:count] = 1
     new_cart << product_hash
-elsif find_item_by_name_in_collection(value, new_cart)
-      if new_product_hash.has_value?(value)
+elsif new_product_hash.has_value?(value)
          new_product_hash[:count] += 1
-       end
-     end
+
 end
 
 }
 
 end
+end 
 
 
 # new_cart.each do |new_product_hash|
