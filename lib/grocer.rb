@@ -39,9 +39,7 @@ cart.each do |item_hash|
               new_cart << item_hash
               # product_hash[:count] ? product_hash[:count] += 1 :
               # product_hash[:count] = 1
-
-           else
-              product_hash[:count] += 1
+              p new_cart
 
            end
       end
