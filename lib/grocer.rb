@@ -1,9 +1,9 @@
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
-  collection.each do |items|
-    items.select{|key, value|
+  collection.each do |product_hash|
+    product_hash.select{|key, value|
          if value.to_s == name
-           return items
+           return product_hash
          end
         }
      end
@@ -31,20 +31,8 @@ cart = [
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
-new_cart = []
-cart.each do |item_hash|
-  item_hash.each do |key, value|
-       new_cart.each do |product_hash|
-          if !product_hash.has_value?(value)
-              new_cart << item_hash
-              # product_hash[:count] ? product_hash[:count] += 1 :
-              # product_hash[:count] = 1
-              p new_cart
-
-           end
-      end
-    end
-  end
-
+new_cart = []  
+cart.each do product_hash
+find_item_by_name_in_collection(name, new_cart)
  p new_cart
 # end
