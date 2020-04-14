@@ -32,8 +32,8 @@ cart = [
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 new_cart = []
-cart.clone.each do |product_hash|
-  product_hash.select { |key, value|
+cart.each do |product_hash|
+  product_hash.clone.select { |key, value|
 
 if !find_item_by_name_in_collection(value, new_cart)
     product_hash[:count] = 1
