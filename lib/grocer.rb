@@ -46,7 +46,7 @@ end
 }
 
 end
-end
+
 
 
 # new_cart.each do |new_product_hash|
