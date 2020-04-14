@@ -1,16 +1,14 @@
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
-  new_hash = {}
   collection.each do |product_hash|
     product_hash.select{|key, value|
          if value.to_s == name
-           new_hash = product_hash
-         else
-           puts "We're sorry, item not found"
+           return product_hash
          end
         }
      end
-     new_hash
+puts "We're sorry, item not found"
+
 end
 cart = [
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
