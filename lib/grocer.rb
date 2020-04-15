@@ -41,4 +41,8 @@ cart = [
         else
           product[:count] = 1
           new_cart << product
+        end
+      end
+    }
+  end 
  # end
