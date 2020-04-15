@@ -40,7 +40,7 @@ if !find_item_by_name_in_collection(value, new_cart)
     new_cart << product_hash
 end
 if find_item_by_name_in_collection(value, new_cart) and new_cart[product_hash].has_value?(value)
-  new_cart[product_hash][:count] += 1
+  new_cart[product_hash][:count].to_i += 1
  end
 }
 end
