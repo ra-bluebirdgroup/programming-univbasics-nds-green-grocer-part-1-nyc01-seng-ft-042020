@@ -44,8 +44,6 @@ cart.each do |product_hash|
     if new_product_hash.has_value?(product)
             new_cart[new_product_hash][count] += 1
     else
-       cart.each do |product_hash|
-        product_hash.clone.select { |key, value|
        new_cart[new_product_hash][key] = value
            end
      end
