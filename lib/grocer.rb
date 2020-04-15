@@ -48,6 +48,7 @@ cart.each do |product_hash|
        cart.each do |product_hash|
         product_hash.clone.select { |key, value|
        new_cart[new_product_hash][key] = value
+     end 
 
     end
  end
