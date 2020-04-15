@@ -39,12 +39,12 @@ if find_item_by_name_in_collection(key, new_cart)
     if new_product_hash.has_key?(key)
        new_cart[new_product_hash][:count] += 1
      end
-   end
-  else
+    end
+else
        product_hash[:count] = 1
        new_cart << product_hash
  end
 }
 end
 p new_cart
- end
+ # end
