@@ -41,7 +41,7 @@ cart = [
   else
     new_cart.each do |new_product_hash|
     new_product_hash[:counter] += 1
-
+       end 
     end
   end
 
