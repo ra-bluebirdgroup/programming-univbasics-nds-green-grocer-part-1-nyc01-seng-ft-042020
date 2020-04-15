@@ -45,5 +45,5 @@ cart = [
     end
   end
 
-p  new_cart
+new_cart
 end
