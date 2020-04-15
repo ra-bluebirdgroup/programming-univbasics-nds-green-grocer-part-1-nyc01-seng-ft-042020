@@ -40,7 +40,7 @@ cart = [
     new_cart <<  product_hash
 
   else
-    new_cart[new_product_hash][:counter] += 1
+    new_product_hash[:counter] += 1
 
     end
   end
