@@ -41,5 +41,5 @@ else
        new_cart << product_hash
     end
   end
-  new_cart
+p  new_cart
  # end
