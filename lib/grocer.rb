@@ -36,8 +36,8 @@ new_cart = []
 cart.each do |product_hash|
   product_hash.select { |key, value|
 if !find_item_by_name_in_collection(key, new_cart)
-     product_hash[:count] = 1
      new_cart << product_hash
+     new_cart[porduct_hash][:count] = 1
 else
   new_cart[product_hash][:count] += 1
  end
