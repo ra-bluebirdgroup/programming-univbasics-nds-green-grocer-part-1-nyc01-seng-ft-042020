@@ -7,6 +7,7 @@ def find_item_by_name_in_collection(name, collection)
          end
         }
      end
+puts "We're sorry, item not found"
 
 end
 
@@ -25,7 +26,7 @@ cart = [
   #
   # Consult README for inputs and outputs
 
-# def consolidate_cart(cart)
+def consolidate_cart(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
@@ -34,13 +35,13 @@ cart = [
 new_cart = []
 cart.each do |product_hash|
   product_hash.clone.select { |key, value|
-if !find_item_by_name_in_collection(key, new_cart)
-#        new_cart[product_hash][:count] + 1
-# else
+if find_item_by_name_in_collection(key, new_cart)
+       new_cart[product_hash][:count] = new_cart[product_hash][:count] + 1
+else
        product_hash[:count] = 1
        new_cart << product_hash
  end
 }
 end
-p new_cart.uniq
- # end
+p new_cart
+ end
