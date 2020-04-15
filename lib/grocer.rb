@@ -36,7 +36,9 @@ cart = [
     if !find_item_by_name_in_collection(product_hash[0], new_cart)
        product_hash[:counter] = 1
        new_cart << product_hash
+    else
+      product_hash[:counter] += 1
     end
-  end 
+  end
   p new_cart
  # end
