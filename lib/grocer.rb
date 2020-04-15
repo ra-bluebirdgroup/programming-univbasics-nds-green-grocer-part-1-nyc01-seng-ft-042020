@@ -44,7 +44,7 @@ cart.each do |product_hash|
           new_cart[new_product_hash][key] = value
             new_cart[new_product_hash][count] = 1
     else
-       new_product_hash[count] += 1
+       new_cart[new_product_hash][count] += 1
 
     end
  end
