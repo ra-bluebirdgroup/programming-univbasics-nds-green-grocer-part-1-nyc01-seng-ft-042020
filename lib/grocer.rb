@@ -38,7 +38,6 @@ count = :count
 cart.each do |product_hash|
   product_hash.clone.select { |key, value|
    product = find_item_by_name_in_collection(value, new_cart)
- end
 
    new_cart.each do new_product_hash
 
@@ -48,9 +47,9 @@ cart.each do |product_hash|
        cart.each do |product_hash|
         product_hash.clone.select { |key, value|
        new_cart[new_product_hash][key] = value
-     end 
+           end
+     end
 
-    end
  end
 }
 end
