@@ -43,5 +43,5 @@ if !find_item_by_name_in_collection(value, new_cart)
  end
 }
 end
-p new_cart.map{|k, v| v}
+p new_cart
  # end
