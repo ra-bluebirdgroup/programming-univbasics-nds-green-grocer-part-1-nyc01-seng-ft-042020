@@ -25,7 +25,7 @@ cart = [
   #
   # Consult README for inputs and outputs
 
- # def consolidate_cart(cart)
+def consolidate_cart(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
@@ -43,4 +43,4 @@ if find_item_by_name_in_collection(key, new_cart)
 }
 end
 p new_cart
-# end
+ end
