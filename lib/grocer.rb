@@ -38,7 +38,7 @@ cart.each do |product_hash|
 if !find_item_by_name_in_collection(key, new_cart)
      product_hash[:count] = 1
      new_cart << product_hash
-elsif find_item_by_name_in_collection(key, new_cart) && new_cart[product_hash].key?(key)
+else 
   new_cart[product_hash][:count] += 1
  end
 }
