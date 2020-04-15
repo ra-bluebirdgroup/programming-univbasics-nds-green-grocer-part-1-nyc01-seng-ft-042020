@@ -45,5 +45,5 @@ cart = [
       end
     }
   end
-  new_cart
+  p new_cart
  # end
