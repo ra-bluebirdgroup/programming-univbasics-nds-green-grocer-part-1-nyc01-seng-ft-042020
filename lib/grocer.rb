@@ -36,5 +36,5 @@ cart = [
     product_hash.select { |k, v|
      product = find_item_by_name_in_collection(v, new_cart)
        new_cart.each do |new_product_hash|
-        new_product_hash.detect{|item| item.to_s == product[0] }
+        new_product_hash.has_value?(product[0])
  # end
