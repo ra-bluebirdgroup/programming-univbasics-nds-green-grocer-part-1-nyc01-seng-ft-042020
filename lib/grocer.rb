@@ -43,5 +43,5 @@ else
  end
 }
 end
-p new_cart
+p new_cart.uniq
  # end
