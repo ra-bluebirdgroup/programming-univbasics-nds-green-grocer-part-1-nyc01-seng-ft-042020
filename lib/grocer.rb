@@ -41,5 +41,5 @@ if !find_item_by_name_in_collection(value, new_cart)
  end
 }
 end
-p new_cart.uniq
+p new_cart.map{|k, v| [k, v.length]}.to_h
  # end
