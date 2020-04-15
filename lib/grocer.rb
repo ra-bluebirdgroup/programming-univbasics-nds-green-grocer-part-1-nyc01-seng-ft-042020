@@ -34,11 +34,11 @@ cart = [
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   new_cart = []
   cart.each do |product_hash|
-  if find_item_by_name_in_collection(product_hash[0], new_cart)
-    new_cart[product_hash][:counter] += 1
-  # if !find_item_by_name_in_collection(product_hash[0], new_cart)
-else
-       product_hash[:counter] = 1
+  if !find_item_by_name_in_collection(product_hash[0], new_cart)
+    product_hash[:counter] = 1
+    new_cart << product_hash
+
+  else new_cart[new_product_hash][:counter] += 1
        new_cart << product_hash
     end
   end
